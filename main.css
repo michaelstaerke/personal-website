@@ -1,6 +1,6 @@
 /*
-
-
+latest author:  mike.stk
+latest date:    11.05.2020
 */
 
 
@@ -188,12 +188,15 @@ html {
 .main-content .section-light.about-me .right-image img {
   border-radius: 11px;
   margin: 20px;
+  margin-left: 11em;
   box-shadow: 0 5px 20px rgba(14, 25, 80, 0.3);
 }
 
 @media (max-width: 599px) {
   .main-content .section-light.about-me .right-image img {
     margin: auto;
+    margin-top: 5em;
+    margin-left: 25%;
   }
 }
 
@@ -346,5 +349,8 @@ body.preloader-site {
   width: 120px;
 }
 
-.white
-{color:ghostwhite}
+.white {
+    color:ghostwhite
+}
+
+

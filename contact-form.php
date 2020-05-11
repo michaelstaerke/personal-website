@@ -25,10 +25,10 @@ Sources: https://medium.com/@stevesohcot/simple-php-contact-form-tutorial-part-1
     $userMessage    = $_POST['Message'];
     
     	
-    $to = "michael-staerke@mail.de";
-    $subject = "Email from michael-staerke.de";
-    $body = "the user typed in: " . $_POST['Email'];
+    $to         = "michael-staerke@mail.de";
+    $subject    = "Email from michael-staerke.de";
+    $body       = "the user typed in: " . $_POST['Email'];
+
     mail($to, $subject, $body);
-    
     
 ?>
