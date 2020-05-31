@@ -1,33 +1,31 @@
 <!---
-Date:       07.04.2020
+Date:       31.05.2020
 Author:     Michael Staerke
 ---->
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="DE">
     
-    
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Michael Staerke</title>
       
-    <!-- Bulma Version 0.8.x-->
-    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+    <!-- Bulma Version 0.8.x -->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css"/>
     <link href="main.css" rel="stylesheet">
-    <script
-      src="https://kit.fontawesome.com/2828f7885a.js"
-      integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
-      crossorigin="anonymous"
-    ></script>
-      
-    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="icon" type="image/png" href="favicon.png"/>  
+    
+    <script src="https://kit.fontawesome.com/2828f7885a.js"
+            integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
+            crossorigin="anonymous">
+    </script>
   </head>
 
-    
-  <body>
+
+<body>
     <!--    Begin Preloader 
     <div class="preloader-wrapper">
       <div class="preloader">
@@ -39,12 +37,13 @@ Author:     Michael Staerke
     
     <!-- Begin Scroll Up Button -->
     <form action="#home">
-      <button id="toTop" title="Go to top">
-        <i class="fas fa-angle-up"></i>
-      </button>
+        <button id="toTop" title="Go to top">
+            <i class="fas fa-angle-up"></i>
+        </button>
     </form>
     <!-- End Scroll Up Button -->
 
+    
     <!-- Begin Header -->
     <div class="header-wrapper" id="home">
       
@@ -57,97 +56,101 @@ Author:     Michael Staerke
         <nav class="navbar is-transparent is-hidden-desktop">
           
           
-          <!-- Begin Burger Menu -->
-          <div class="navbar-brand">
+        <!-- Begin Burger Menu -->
+        <div class="navbar-brand">
             <div class="navbar-burger burger" data-target="mobile-nav">
-              <span></span>
-              <span></span>
-              <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+    
+        <!-- End Burger Menu -->
+        <div id="mobile-nav" class="navbar-menu">
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <a class="navbar-item" href="#home">
+                        Home
+                    </a>
+                </div>
+                <div class="navbar-item">
+                    <a class="navbar-item" href="#about-me">
+                        Über mich
+                    </a>
+                </div>
+                <div class="navbar-item">
+                    <a class="navbar-item" href="#services">
+                        Mein Webserver
+                    </a>
+                </div>
+                <div class="navbar-item">
+                    <a class="navbar-item" href="#skills">
+                        IT-Skills
+                    </a>
+                </div>
+                <div class="navbar-item">
+                    <a class="navbar-item" href="#my-work">
+                        Mein Portfolio
+                    </a>
+                </div>
+                <div class="navbar-item">
+                    <a class="navbar-item" href="#contact">
+                        Kontakt
+                    </a>
+                </div>
             </div>
           </div>
             
-          <!-- End Burger Menu -->
-          <div id="mobile-nav" class="navbar-menu">
-            <div class="navbar-end">
-              <div class="navbar-item">
-                <a class="navbar-item" href="#home">
-                  Home
-                </a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#about-me">
-                  Über mich
-                </a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#services">
-                  Mein Webserver
-                </a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#skills">
-                  IT-Skills
-                </a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#my-work">
-                  Mein Portfolio
-                </a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#contact">
-                  Kontakt
-                </a>
-              </div>
-            </div>
-          </div>
         </nav>
         <!-- End Mobile Nav -->
           
           
         <!-- Begin Hero Content-->
         <div class="hero-body">
-          <div class="container has-text-centered">
-            <h1 class="subtitle">Hallo, ich bin der</h1>
-            <h2 class="title">Mike</h2>
-            <h1 class="subtitle profession">ein IT-Entusiast</h1>
-          </div>
+            <div class="container has-text-centered">
+                <h1 class="subtitle">Hallo, ich bin der</h1>
+                <h2 class="title">Mike</h2>
+                <h1 class="subtitle profession">ein IT-Entusiast</h1>
+            </div>
         </div>
         <!-- End Hero Content-->
           
           
         <!-- Begin Hero Menu -->
         <div class="hero-foot ">
-          <div class="hero-foot--wrapper">
-            <div class="columns">
-              <div class="column is-12 hero-menu-desktop has-text-centered">
-                <ul>
-                  <li class="is-active">
-                    <a href="#home">Home</a>
-                  </li>
-                  <li>
-                    <a href="#about-me">Über mich</a>
-                  </li>
-                  <li>
-                    <a href="#services">Mein Webserver</a>
-                  </li>
-                  <li>
-                    <a href="#skills">IT-Skills</a>
-                  </li>
-                  <li>
-                    <a href="#my-work">Mein Portfolio</a>
-                  </li>
-                  <li>
-                    <a href="#contact">Kontakt</a>
-                  </li>
-                </ul>
-              </div>
+            <div class="hero-foot--wrapper">
+                <div class="columns">
+                    <div class="column is-12 hero-menu-desktop has-text-centered">
+                        <ul>
+                            <li class="is-active">
+                                <a href="#home">Home</a>
+                            </li>
+                            <li>
+                                <a href="#about-me">Über mich</a>
+                            </li>
+                            <li>
+                                <a href="#services">Mein Webserver</a>
+                            </li>
+                            <li>
+                                <a href="#skills">IT-Skills</a>
+                            </li>
+                            <li>
+                                <a href="#my-work">Mein Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Kontakt</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
         <!-- End Hero Menu -->
+          
       </section>
       <!-- End Hero -->
+        
     </div>
     <!-- End Header -->
 
@@ -155,85 +158,99 @@ Author:     Michael Staerke
       
     <!-- Begin Main Content -->
     <div class="main-content">
+        
       <!-- Begin About Me Section -->
-      <div class="section-light about-me" id="about-me">
+    <div class="section-light about-me" id="about-me">
+        
         <div class="container">
-          <div class="column is-12 about-me">
-            <h1 class="title has-text-centered section-title">Über mich</h1>
-            <br />
-          </div>
-          <div class="columns is-multiline">
-            <div
-              class="column is-6 has-vertically-aligned-content"
-              data-aos="fade-right">
-              <p class="is-larger">
-                <strong>Ich bin der Mike, 24 Jahre jung und ursprünglich komme ich aus dem Landkreis Lörrach, welches benachbart ist zu Frankreich und zu der Schweiz. Momentan lebe ich im wunderschönen Konstanz und hier genieße ich besonders Land, Leute und Kultur rund um den Bodensee.</strong>
-              </p>
-              <br />
-              <br />
-              <p>
-                2017 habe ich mich dazu entschieden, beruflich in der Informatik Welt Fuß zu fassen und seither bin ich von Tag zu Tag immer wieder von Neuem von der Informatik und dessen Facetten, fasziniert. Hobbytechnisch betreibe ich gerne Sport wie Fahrrad fahren, Laufen, Basketball oder Fitness um mich geistig sowie körperlich fit zu halten. Ich schieße auch gerne schöne Landschaftsbilder wenn das Wetter gerade schöne Motive hergibt. Zuhause in meinen vier Wänden verbringe ich gerne meine Zeit mit kochen, lese einen spannenden Roman oder schaue eine neue, trendige Serie auf Netflix.
-              </p>
-              <br />
-              <br />
-              <div class="is-divider"></div>
-              <div class="columns about-links">
+            <div class="column is-12 about-me">
+                <h1 class="title has-text-centered section-title">Über mich</h1>
+                <br/>
+            </div>
+            
+            <div class="columns is-multiline">
+                <div class="column is-6 has-vertically-aligned-content" data-aos="fade-right">
+                    <p class="is-larger">
+                        <strong>Ich bin der Mike, 24 Jahre jung und ich komme ursprünglich aus dem Landkreis Lörrach, 
+                            welches benachbart zu Frankreich und zur Schweiz, ist. Momentan lebe ich im wunderschönen Konstanz 
+                            und hier genieße ich besonders Land, Leute und Kultur rund um den Bodensee.</strong>
+                    </p>
+                    <br/>
+                    <br/>
+                    <p>
+                            2017 habe ich mich dazu entschieden, beruflich in der Informatik Welt Fuß zu fassen und 
+                            seither bin ich von Tag zu Tag immer wieder von Neuem von der Informatik und 
+                            dessen Facetten, fasziniert. Hobby technisch betreibe ich gerne Sport wie 
+                            Fahrrad fahren, Laufen, Basketball oder Fitness um mich geistig sowie 
+                            körperlich fit zu halten. Ich schieße auch gerne schöne Landschaftsbilder, 
+                            falls das Wetter gerade schöne Motive hergibt. Zuhause in meinen vier Wänden 
+                            verbringe ich gerne meine Zeit mit kochen, lese einen spannenden Roman oder schaue eine neue, trendige Serie auf Netflix.
+                    </p>
+                    <br/>
+                    <br/>
+                    
+                <div class="is-divider"></div>
+                <div class="columns about-links">
                 <div class="column">
-                  <p class="heading">
-                    <strong>Handy</strong>
-                  </p>
-                  <p class="subheading">
-                    +49 176 57 955 715
-                  </p>
+                    <p class="heading">
+                        <strong>Handy</strong>
+                    </p>
+                    <p class="subheading">
+                        +49 176 57 955 715
+                    </p>
                 </div>
                 <div class="column">
-                  <p class="heading">
-                    <strong>E-Mail</strong>
-                  </p>
-                  <p class="subheading">
-                    michael.staerke@mail.de
-                  </p>
+                    <p class="heading">
+                        <strong>E-Mail</strong>
+                    </p>
+                    <p class="subheading">
+                        michael.staerke@mail.de
+                    </p>
                 </div>
                 <div class="column">
-                  <p class="heading">
-                    <strong>Mein momentanes Projekt</strong>
-                  </p>
-                  <p class="subheading">
-                    dervideo.de
-                  </p>
+                    <p class="heading">
+                        <strong>Mein momentanes Projekt</strong>
+                    </p>
+                    <p class="subheading">
+                        dervideo.de
+                    </p>
                 </div>
               </div>
             </div>
-            <div class="column is-6 right-image " data-aos="fade-left">
-              <img class="is-rounded" src="pics/michael_staerke_portfolio_website.jpg" width="60%" alt="" class="portrait"/>
-            </div>
+                
+                <div class="column is-6 right-image " data-aos="fade-left">
+                    <img class="is-rounded" src="pics/michael_staerke_portfolio_website.jpg" width="60%" alt="" class="portrait"/>
+                </div>
           </div>
+            
         </div>
       </div>
+        
+        
       <!-- End About Me Content -->
       <div class="section-dark resume">
         <div class="container">
-          <div
-            class="columns is-multiline"
-            data-aos="fade-in"
-            data-aos-easing="linear"
-          >
+            
+          <div class="columns is-multiline" data-aos="fade-in" data-aos easing="linear">
+              
             <div class="column is-12 about-me">
-              <h1 class="title has-text-centered section-title">
-                Mein Lebenslauf
-              </h1>
+                <h1 class="title has-text-centered section-title">
+                    Mein Lebenslauf
+                </h1>
             </div>
             <div class="column is-10 has-text-centered is-offset-1">
-              <h2 class="subtitle">
-                Hier findet man meinen bisherigen Werdegang und meine erworbenen Kenntnisse
-              </h2>
-              <form action="example.docs">
-                <button class="button">
-                  Download Lebenslauf&emsp;<i class="fad fa-download fa-lg"></i>
-                </button>
-              </form>
+                <h2 class="subtitle">
+                    Hier findet man meinen bisherigen Werdegang und meine erworbenen Kenntnisse
+                </h2>
+                    <form action="example.docs">
+                        <button class="button">
+                            Download Lebenslauf &emsp;<i class="fad fa-download fa-lg"></i>
+                        </button>
+                    </form>
             </div>
+              
           </div>
+            
         </div>
       </div>
         
@@ -241,33 +258,35 @@ Author:     Michael Staerke
         
       <!-- Begin Webserver Content -->
       <div class="section-color services" id="services">
-        <div class="container">
-          <div class="columns is-multiline">
+          <div class="container">
+            <div class="columns is-multiline">
               
               
-            <div class="column is-12 about-me" data-aos="fade-in"
-                 data-aos-easing="linear">
-              <h1 class="title has-text-centered section-title">
-                  Mein Webserver</h1>
+                <div class="column is-12 about-me" data-aos="fade-in"
+                     data-aos-easing="linear">
+                  <h1 class="title has-text-centered section-title">
+                      Mein Webserver</h1>
 
-              <h2 class="subtitle">
-                Ich habe meinen eigenen Apache Webserver auf einem Headless Raspberry Pi 3+ für diverse (zukünftige) Anwendungen aufgesetzt, z.B. eine Landingpage auf dem Webserver des Raspberry Pi für einen allgemeinen Zugang darauf. O.a. Privates File-Sharing für Kollegen die zum Beispiel Daten austauschen möchten.
-              </h2>
-              <br/>
-            </div>
+                  <h2 class="subtitle">
+                    Ich habe meinen eigenen Apache Webserver auf einem Headless Raspberry Pi 3+ für diverse (zukünftige) 
+                      Anwendungen aufgesetzt, z.B. eine Landingpage auf dem Webserver des Raspberry Pi für einen allgemeinen 
+                      Zugang darauf. Oder auch privates File-Sharing für Kollegen die zum Beispiel private Daten austauschen möchten.
+                  </h2>
+                  <br/>
+                </div>
                 
               
-            <div class="column">
-              <div class="column has-text-centered" 
-                   data-aos="fade-in" data-aos-easing="linear">
-                <i class="fas fa-upload fa-3x"></i>
-                <br/><br/>
-                <h2>
-                    <a href="webserver-mike-stk.de" style="color:white">
-                        Serverzugriff</a>
-                </h2>
-              </div>
-            </div>
+                <div class="column">
+                  <div class="column has-text-centered" 
+                       data-aos="fade-in" data-aos-easing="linear">
+                    <i class="fas fa-upload fa-3x"></i>
+                    <br/><br/>
+                    <h2>
+                        <a href="webserver-mike-stk.de" style="color:white">
+                            Serverzugriff</a>
+                    </h2>
+                  </div>
+                </div>
               
               
             </div>
@@ -278,39 +297,35 @@ Author:     Michael Staerke
         
       <!-- Begin Skills Content -->
       <div class="section-light skills" id="skills">
-        <div class="container">
-          <div class="columns is-multiline">
-            <div class="column is-12 about-me">
-              <h1 class="title has-text-centered section-title">IT-Skills</h1>
-            </div>
-            <div
-              class="column is-6"
-              data-aos="fade-in"
-              data-aos-easing="linear"
-            >
-              <h1>Webseiten Support</h1>
-              <progress class="progress" value="90" max="100">90%</progress>
-              <h1>Wordpress</h1>
-              <progress class="progress" value="70" max="100">70%</progress>
-              <h1>Webhosting</h1>
-              <progress class="progress" value="50" max="100">50%</progress>
-              <h1>Webserver</h1>
-              <progress class="progress" value="40" max="100">40%</progress>
-            </div>
-            <div
-              class="column is-6"
-              data-aos="fade-in"
-              data-aos-easing="linear"
-            >
-              <h1>HTML</h1>
-              <progress class="progress" value="70" max="100">70%</progress>
-              <h1>CSS</h1>
-              <progress class="progress" value="60" max="100">60%</progress>
-              <h1>Javascript</h1>
-              <progress class="progress" value="20" max="100">20%</progress>
-              <h1>PHP</h1>
-              <progress class="progress" value="20" max="100">20%</progress>
-            </div>
+          <div class="container">
+            <div class="columns is-multiline">
+                
+                <div class="column is-12 about-me">
+                    <h1 class="title has-text-centered section-title">IT-Skills</h1>
+                </div>
+
+                <div class="column is-6" data-aos="fade-in" data-aos-easing="linear">
+                    <h1>Webseiten Support</h1>
+                        <progress class="progress" value="90" max="100">90%</progress>
+                    <h1>Wordpress</h1>
+                    <progress class="progress" value="70" max="100">70%</progress>
+                    <h1>Webhosting</h1>
+                    <progress class="progress" value="50" max="100">50%</progress>
+                    <h1>Webserver</h1>
+                    <progress class="progress" value="40" max="100">40%</progress>
+                </div>
+
+                <div class="column is-6" data-aos="fade-in" data-aos-easing="linear">
+                    <h1>HTML</h1>
+                    <progress class="progress" value="70" max="100">70%</progress>
+                    <h1>CSS</h1>
+                    <progress class="progress" value="60" max="100">60%</progress>
+                    <h1>Javascript</h1>
+                    <progress class="progress" value="20" max="100">20%</progress>
+                    <h1>PHP</h1>
+                    <progress class="progress" value="20" max="100">20%</progress>
+                </div>
+
           </div>
         </div>
       </div>
@@ -319,168 +334,124 @@ Author:     Michael Staerke
         
       <!-- Begin Work Content -->
       <div class="section-dark my-work" id="my-work">
-        <div class="container">
-          <div
-            class="columns is-multiline"
-            data-aos="fade-in"
-            data-aos-easing="linear"
-          >
-            <div class="column is-12">
-              <h1 class="title has-text-centered section-title">Mein Portfolio</h1>
-            </div>
-            <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=0');"
-                ></figure>
-              </a>
-            </div>
-            <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=10');"
-                ></figure>
-              </a>
-            </div>
-            <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=20');"
-                ></figure>
-              </a>
-            </div>
-            <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=30');"
-                ></figure>
-              </a>
-            </div>
+          <div class="container">
+            
+          <div class="columns is-multiline" data-aos="fade-in" data-aos-easing="linear">
+            
+              <div class="column is-12">
+                  <h1 class="title has-text-centered section-title">Mein Portfolio</h1>
+              </div>
               
-            <!--  
-            <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=40');"
-                ></figure>
-              </a>
-            </div>
-            <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=50');"
-                ></figure>
-              </a>
-            </div>
-            <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=60');"
-                ></figure>
-              </a>
-            </div>
-            <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=70');"
-                ></figure>
-              </a>
-            </div>
-            -->
+              <div class="column is-3">
+                  <a href="#">
+                      <figure
+                        class="image is-2by1 work-item"
+                        style="background-image: url('https://picsum.photos/320/180?image=0');">
+                      </figure>
+                  </a>
+              </div>
+              <div class="column is-3">
+                  <a href="#">
+                      <figure
+                        class="image is-2by1 work-item"
+                        style="background-image: url('https://picsum.photos/320/180?image=10');">
+                      </figure>
+                  </a>
+              </div>
+              <div class="column is-3">
+                  <a href="#">
+                      <figure
+                        class="image is-2by1 work-item"
+                        style="background-image: url('https://picsum.photos/320/180?image=20');">
+                      </figure>
+                  </a>
+              </div>
+              <div class="column is-3">
+                  <a href="#">
+                      <figure
+                        class="image is-2by1 work-item"
+                        style="background-image: url('https://picsum.photos/320/180?image=30');">
+                      </figure>
+                  </a>
+              </div>
               
           </div>
-        </div>
+          </div>
       </div>
       <!-- End Work Content -->
         
         
       <!-- Begin Contact Content -->
       <div class="section-light contact" id="contact">
-        <div class="container">
-          <div class="columns is-multiline"
-            data-aos="fade-in-up"
-            data-aos-easing="linear"
-          >
-            <div class="column is-12 about-me">
-              <h1 class="title has-text-centered section-title">
-                Kontakt
-              </h1>
-            </div>
-            <div class="column is-8 is-offset-2">
-              <form action="/contact-form.php"
-                method="get"
-              >
-                <div class="field">
-                  <label class="label">Name</label>
-                  <div class="control has-icons-left">
-                    <input
-                      class="input"
-                      type="text"
-                      placeholder="Max Mustermann / Susanne Musterfrau"
-                      name="Name"
-                    />
-                    <span class="icon is-small is-left">
-                      <i class="fas fa-user"></i>
-                    </span>
-                  </div>
+          <div class="container">
+            
+              <div class="columns is-multiline" data-aos="fade-in-up" data-aos-easing="linear">
+
+                <div class="column is-12 about-me">
+                    <h1 class="title has-text-centered section-title">
+                        Kontakt
+                    </h1>
                 </div>
-                <div class="field">
-                  <label class="label">Email</label>
-                  <div class="control has-icons-left">
-                    <input
-                      class="input"
-                      type="email"
-                      placeholder="beispiel@email.de"
-                      name="Email"
-                    />
-                    <span class="icon is-small is-left">
-                      <i class="fas fa-envelope"></i>
-                    </span>
-                  </div>
+
+                <div class="column is-8 is-offset-2">
+                    <form action="/contact-form.php" method="get">
+
+                        <div class="field">
+                            <label class="label">Name</label>
+                            <div class="control has-icons-left">
+                                <input class="input" type="text" placeholder="Max Mustermann / Susanne Musterfrau" name="Name"/>
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Email</label>
+                            <div class="control has-icons-left">
+                                <input class="input" type="email" placeholder="beispiel@email.de" name="Email"/>
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Nachricht</label>
+                                <div class="control">
+                                    <textarea class="textarea" placeholder="Hallo Mike, ..." name="Message">
+                                    </textarea>
+                                </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control">
+                                <label class="checkbox">
+                                    <input type="checkbox" name="accept-checkbox">
+                                    Ich bestätige die<a href="#">
+                                    Datenschutzerklärung</a>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control">
+                                <button class="button submit-button" name="button">
+                                    Abschicken &nbsp;&nbsp;
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                  </form>
                 </div>
-                <div class="field">
-                  <label class="label">Nachricht</label>
-                  <div class="control">
-                    <textarea
-                      class="textarea"
-                      placeholder="Hallo Mike, ..."
-                      name="Message"
-                    ></textarea>
-                  </div>
-                </div>
-                  
-                <div class="field">
-                    <div class="control">
-                        <label class="checkbox">
-                            <input type="checkbox" name="accept-checkbox">
-                            Ich bestätige die<a href="#">
-                            Datenschutzerklärung</a>
-                        </label>
-                    </div>
-                </div>
-                  
-                <div class="field">
-                  <div class="control ">
-                    <button class="button submit-button" name="button">
-                      Abschicken&nbsp;&nbsp;
-                      <i class="fas fa-paper-plane"></i>
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
+
+              </div>
         </div>
       </div>
       <!-- End Contact Content -->
+        
+        
     </div>
     <!-- End Main Content -->
 
@@ -488,27 +459,34 @@ Author:     Michael Staerke
       
     <!-- Begin Footer -->
     <div class="footer">
-      <p>
-        <a href="https://github.com/michaelstaerke"><strong class="white">Github</strong></a>
-        <a href="https://www.xing.com/profile/Mike_Staerke">XING</a>
-        <a href="https://www.facebook.com/staerke.mike">Facebook</a>
-      </p>
+        <p>
+            <a href="https://github.com/michaelstaerke"><strong class="white">Github</strong></a>
+            <a href="https://www.xing.com/profile/Mike_Staerke">XING</a>
+            <a href="https://www.facebook.com/staerke.mike">Facebook</a>
+        </p>
     </div>
     <!-- End Footer -->
 
       
     <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="../js/showcase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    
+    <script src="../js/showcase.js">
+    </script>
+    
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js">
+    </script>
+    
     <script>
       AOS.init({
         easing: "ease-out",
         duration: 800,
       });
     </script>
-  </body>
+    
+</body>
 </html>
 
 

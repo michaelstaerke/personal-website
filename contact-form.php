@@ -14,7 +14,6 @@ div class: "field/control/checkbox"   type: "accept-checkbox"
 div class: "field/control/button"     type: "send-button"
 
 Sources: https://medium.com/@stevesohcot/simple-php-contact-form-tutorial-part-1-of-2-6cdb2e383b23
-
 */
 
 
