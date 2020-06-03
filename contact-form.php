@@ -6,7 +6,6 @@
 
 <?php
     
-
     /* html urls */
     $url_homepage = "michael-staerke.de";
     $url_mail_failed = "";
@@ -40,7 +39,6 @@
         exit();
     }
 
-
 ?>
 
 
@@ -50,7 +48,6 @@
 +++NOTES+++
 
 html-data:
-
 div class: "field/control/input"      type: "Name"
 div class: "field/control/input"      type: "Email"
 div class: "field/control/textarea"   type: "Message"
