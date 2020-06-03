@@ -47,7 +47,7 @@
 
 
 /* 
-+++NOTIZEN+++
++++NOTES+++
 
 html-data:
 
@@ -61,5 +61,5 @@ Sources:
 1.  https://medium.com/@stevesohcot/simple-php-contact-form-tutorial-part-1-of-2-6cdb2e383b23
 2.  https://www.php-einfach.de/experte/php-codebeispiele/kontaktformular/
 
-+++ENDE+++
++++END+++
 */
