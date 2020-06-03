@@ -1,6 +1,6 @@
 <!---
-Date:       31.05.2020
-Author:     Michael Staerke
+@date:       03.06.2020
+@author:     Mike Stk
 ---->
 
 
@@ -8,29 +8,41 @@ Author:     Michael Staerke
 <html lang="DE">
     
 <head>
+    <!-- ground meta tags -->
     <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="format-detection" content="telephone=yes">
     <title>Michael Staerke</title>
       
     <!-- Bulma Version 0.8.x -->
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css"/>
-    <link href="main.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet"/>
     <link rel="icon" type="image/png" href="favicon.png"/>  
     
+    <!-- scripts -->
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/2828f7885a.js"
             integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
-            crossorigin="anonymous">
-    </script>
-  </head>
+            crossorigin="anonymous"></script>
+    
+    <!-- seo meta tags -->
+    <meta name="author" content="Michael Staerke">
+    <meta name="keywords" lang="de" content="Michael, Staerke, Stärke, Mike, Webseite, Portfolio">
+    <meta name="description" content="Michael Staerke's Webseite, hier findet man Lebenslauf, IT-Fähigkeiten, Referenzen und Social Media.">
+    <meta name="content-type">
+    <meta name="robots" content="noindex,nofollow">
+    
+</head>
 
 
 <body>
+
     <!--    Begin Preloader 
     <div class="preloader-wrapper">
-      <div class="preloader">
-        <img src="img/preloader.gif" alt="" />
-      </div>
+        <div class="preloader">
+            <img src="img/preloader.gif" alt="" />
+        </div>
     </div>
             End Preloader-->
     
@@ -385,7 +397,8 @@ Author:     Michael Staerke
       <div class="section-light contact" id="contact">
           <div class="container">
             
-              <div class="columns is-multiline" data-aos="fade-in-up" data-aos-easing="linear">
+              <div class="columns is-multiline" data-aos="fade-in-up" 
+                   data-aos-easing="linear">
 
                 <div class="column is-12 about-me">
                     <h1 class="title has-text-centered section-title">
@@ -394,22 +407,25 @@ Author:     Michael Staerke
                 </div>
 
                 <div class="column is-8 is-offset-2">
-                    <form action="contact-form.php" method="get">
+                    
+                    
+                    <!-- PHP Contact Form -->
+                    <form action="contact-form.php" method="POST">
 
                         <div class="field">
                             <label class="label">Name</label>
                             <div class="control has-icons-left">
-                                <input class="input" type="text" placeholder="Max Mustermann / Susanne Musterfrau" name="Name"/>
+                                <input class="input" type="text" placeholder="Max Mustermann / Susanne Musterfrau" name="Name" id="Name"/>
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-user"></i>
                                 </span>
                             </div>
                         </div>
-
+                        
                         <div class="field">
                             <label class="label">Email</label>
                             <div class="control has-icons-left">
-                                <input class="input" type="email" placeholder="beispiel@email.de" name="Email"/>
+                                <input class="input" type="email" placeholder="beispiel@email.de" name="Email" id="Email"/>
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-envelope"></i>
                                 </span>
@@ -417,9 +433,17 @@ Author:     Michael Staerke
                         </div>
 
                         <div class="field">
+                            <label class="label">Betreff</label>
+                                <div class="control has-icons-left">
+                                    <input class="input" type="subject" placeholder="z.B. Bewerbungszusage" name="Betreff" id="Betreff"/>
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                        </div>                        
+                        
+                        <div class="field">
                             <label class="label">Nachricht</label>
                                 <div class="control">
-                                    <textarea class="textarea" placeholder="Hallo Mike, ..." name="Message">
+                                    <textarea class="textarea" placeholder="Hallo Mike, ..." name="Message" id="Message">
                                     </textarea>
                                 </div>
                         </div>
@@ -436,14 +460,14 @@ Author:     Michael Staerke
 
                         <div class="field">
                             <div class="control">
-                                <button class="button submit-button" name="button">
+                                <button class="button submit-button"  name="button">
                                     Abschicken &nbsp;&nbsp;
                                     <i class="fas fa-paper-plane"></i>
                                 </button>
                             </div>
                         </div>
 
-                  </form>
+                    </form>
                 </div>
 
               </div>
