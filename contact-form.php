@@ -47,7 +47,7 @@
 
 /* 
 +++NOTIZEN+++
-@date:      26.07.2020
+@date:      15.08.2020
 @author:    Mike.Stk
 
 html-data:
