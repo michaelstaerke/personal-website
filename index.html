@@ -1,5 +1,5 @@
 <!---
-@date:       03.06.2020
+@date:       26.07.2020
 @author:     Mike Stk
 ---->
 
@@ -13,7 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="format-detection" content="telephone=yes">
-    <title>Michael Staerke</title>
+    <title>Michael Stärke's persönliche Referenz Webseite</title>
       
     <!-- Bulma Version 0.8.x -->
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css"/>
@@ -21,18 +21,17 @@
     <link rel="icon" type="image/png" href="favicon.png"/>  
     
     <!-- scripts -->
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
     <script src="https://kit.fontawesome.com/2828f7885a.js"
             integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
             crossorigin="anonymous"></script>
     
     <!-- seo meta tags -->
-    <meta name="author" content="Michael Staerke">
+    <meta name="author" content="Michael Stärke">
     <meta name="keywords" lang="de" content="Michael, Staerke, Stärke, Mike, Webseite, Portfolio">
-    <meta name="description" content="Michael Staerke's Webseite, hier findet man Lebenslauf, IT-Fähigkeiten, Referenzen und Social Media.">
+    <meta name="description" content="Michael Stärke's Webseite, hier findet man Lebenslauf, IT-Fähigkeiten, Referenzen und Social Media.">
     <meta name="content-type">
     <meta name="robots" content="noindex,nofollow">
-    
 </head>
 
 
@@ -71,9 +70,44 @@
         <!-- Begin Burger Menu -->
         <div class="navbar-brand">
             <div class="navbar-burger burger" data-target="mobile-nav">
+
                 <span></span>
                 <span></span>
                 <span></span>
+
+            <!-- ToDo: Mobile navigation bar with Javascript
+                <div class="navbar-item">
+                    <a class="navbar-item" href="#home">
+                        Home
+                    </a>
+                </div>
+                <div class="navbar-item">
+                    <a class="navbar-item" href="#about-me">
+                        Über mich
+                    </a>
+                </div>
+                <div class="navbar-item">
+                    <a class="navbar-item" href="#services">
+                        Mein Webserver
+                    </a>
+                </div>
+                <div class="navbar-item">
+                    <a class="navbar-item" href=#skills">
+                        IT-Skills
+                    </a>
+                </div>
+                <div class="navbar-item">
+                    <a class="navbar-item" href="#my-work">
+                        Mein Portfolio
+                    </a>
+                </div>
+                <div class="navbar-item">
+                    <a class="navbar-item" href="#contact">
+                        Kontakt
+                    </a>
+                </div>
+            -->
+
             </div>
         </div>
         
@@ -124,6 +158,9 @@
                 <h1 class="subtitle">Hallo, ich bin der</h1>
                 <h2 class="title">Mike</h2>
                 <h1 class="subtitle profession">ein IT-Entusiast</h1>
+
+                <!-- ToDo: Scroll down button -->
+
             </div>
         </div>
         <!-- End Hero Content-->
@@ -207,9 +244,12 @@
                     <p class="heading">
                         <strong>Handy</strong>
                     </p>
+
+                    <!-- ToDo: Clickable mobilphone number -->
                     <p class="subheading">
                         +49 176 57 955 715
                     </p>
+
                 </div>
                 <div class="column">
                     <p class="heading">
@@ -409,41 +449,48 @@
                 <div class="column is-8 is-offset-2">
                     
                     
-                    <!-- PHP Contact Form -->
-                    <form action="contact-form.php" method="POST">
+                    <!-- ToDo: PHP contact form -->
+                    <!-- ToDo: Javascript validation <form action="contact-form.php" onsubmit="validateForm()" method="POST"> -->
+                    <form class="contact-form" action="contact-form.php" method="post">
 
                         <div class="field">
                             <label class="label">Name</label>
                             <div class="control has-icons-left">
-                                <input class="input" type="text" placeholder="Max Mustermann / Susanne Musterfrau" name="Name" id="Name"/>
+                                
+                                <!-- name is a parameter for php, id is a parameter for javascript -->
+                                <input class="input" type="text" name="Name" id="guestName" placeholder="Max Mustermann / Susanne Musterfrau"/>
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-user"></i>
                                 </span>
+
                             </div>
                         </div>
                         
                         <div class="field">
                             <label class="label">Email</label>
                             <div class="control has-icons-left">
-                                <input class="input" type="email" placeholder="beispiel@email.de" name="Email" id="Email"/>
+
+                                <input class="input" type="email" name="Email" id="guestEmail" placeholder="beispiel@email.de"/>
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-envelope"></i>
                                 </span>
+
                             </div>
                         </div>
 
                         <div class="field">
                             <label class="label">Betreff</label>
                                 <div class="control has-icons-left">
-                                    <input class="input" type="subject" placeholder="z.B. Bewerbungszusage" name="Betreff" id="Betreff"/>
-                                    <i class="fas fa-envelope"></i>
+
+                                    <input class="input" type="subject" name="Subject" id="guestTopic" placeholder="z.B. Bewerbungszusage"/>
+
                                 </div>
                         </div>                        
                         
                         <div class="field">
                             <label class="label">Nachricht</label>
                                 <div class="control">
-                                    <textarea class="textarea" placeholder="Hallo Mike, ..." name="Message" id="Message">
+                                    <textarea class="textarea" name="Message" id="guestMessage" placeholder="Hallo Mike, ...">
                                     </textarea>
                                 </div>
                         </div>
@@ -451,19 +498,23 @@
                         <div class="field">
                             <div class="control">
                                 <label class="checkbox">
-                                    <input type="checkbox" name="accept-checkbox">
+                                    <input type="checkbox" name="guestPrivacyPolicy" id="guestPrivacyPolicy">
                                     Ich bestätige die<a href="#">
                                     Datenschutzerklärung</a>
                                 </label>
                             </div>
                         </div>
 
+                        <!-- contact form BUTTON -->
                         <div class="field">
                             <div class="control">
-                                <button class="button submit-button"  name="button">
+                                
+                                <!--  <button onclick='return validateForm();' class="button submit-button"  name="button" id="guestSendButton">  -->
+                                <button class="button submit-button"  name="button" id="guestSendButton">
                                     Abschicken &nbsp;&nbsp;
                                     <i class="fas fa-paper-plane"></i>
                                 </button>
+                                    <span class='error-message' id='submit-error'></span>
                             </div>
                         </div>
 

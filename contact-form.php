@@ -1,45 +1,44 @@
-/*
-@author     Mike Stk
-@date       03.06.2020
-*/
-
-
 <?php
     
 
-    /* html urls */
-    $url_homepage = "michael-staerke.de";
-    $url_mail_failed = "";
-
-    
-    /* html parameter */
-    $userName       = $_POST['Name'];
-    $userEmail      = $_POST['Email'];
-    $userSubject    = $_POST['Subject'];  /* to do */
-    $userMessage    = $_POST['Message'];
-    
-    	
-    $homeEmail      = "michael-staerke@mail.de";
-    $clientsubject  = "Email from michael-staerke.de";
-    $mailBody       = "the user typed in: " . $_POST['Email'];
+    /* check if html form was submitted */
+    if (isset($_POST['submit'])) {
 
 
-    /* sending client mail to my email adress */
-    $mail_send = mail($homeEmail, $clientSubject, $mailBody);
-    $
+        /* html urls */
+        $url_homepage = "michael-staerke.de";
+        $url_mail_failed = "";
 
         
-    if($mail_send) {
-
-        header("Location: ".$url_homepage); 
-        exit();
-    } 
-    else {
+        /* html data, variables declaration and init. */
+        $userName       = $_POST['Name'];
+        $userEmail      = $_POST['Email'];
+        $userSubject    = $_POST['Subject'];  /* to do */
+        $userMessage    = $_POST['Message'];
         
-        header("Location: ".$url_mail_failed);
-        exit();
+
+            /* contact email content */
+            $homeEmail      = "michael.staerke@mail.de";
+            $clientSubject  = "Email from michael-staerke.de";
+            $mailBody       = "the user typed in: " . $_POST['Email'];
+
+
+            /* sending client mail to my email adress */
+            $mail_send = mail($homeEmail, $clientSubject, $mailBody);
+
+            
+        if($mail_send) {
+
+            header("Location: ".$url_homepage); 
+            exit();
+        } 
+        else {
+            
+            header("Location: ".$url_mail_failed);
+            exit();
+        }
+
     }
-
 
 ?>
 
@@ -48,6 +47,8 @@
 
 /* 
 +++NOTIZEN+++
+@date:      26.07.2020
+@author:    Mike.Stk
 
 html-data:
 
