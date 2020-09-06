@@ -104,6 +104,8 @@ html {
   padding-top: 2rem;
   color: #3c4172;
   font-family: 'Poppins', sans-serif;
+  padding-top: 10%;
+
 }
 
 .main-content .section-dark {
@@ -113,7 +115,9 @@ html {
 
 .main-content .section-dark.resume {
   height: 400px;
-  padding-top: 100px;
+  padding-top: 10%;
+  padding-bottom: 20%;
+    
 }
 
 @media (max-width: 599px) {
@@ -142,6 +146,8 @@ html {
 
 .main-content .section-dark.my-work {
   padding: 120px;
+  padding-top: 15%;
+  padding-bottom: 15%;
 }
 
 @media (max-width: 599px) {
@@ -221,7 +227,7 @@ html {
 
 .main-content .section-light.contact button {
   width: 100%;
-  background-color: #43485c;
+  background-color: #383838;
   color: white;
   height: 50px;
   font-size: 1.1rem;
@@ -237,7 +243,7 @@ html {
 
 .main-content .section-color.services {
   padding: 100px;
-  background-color: #43485c;
+  background-color: #383838;
   color: white;
 }
 
@@ -266,7 +272,7 @@ html {
   height: 80px;
   line-height: 25px;
   text-align: center;
-  background: #1f2c6c;
+  background: #164e97;
   color: whitesmoke;
   padding-top: 2rem;
 }
