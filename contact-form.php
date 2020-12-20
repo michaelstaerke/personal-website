@@ -6,8 +6,8 @@
 
 
         /* html urls */
-        $url_homepage = "michael-staerke.de";
-        $url_mail_failed = "";
+        $url_homepage = "michael-staerke.de";    // return to website if mail send was successfull
+        $url_mail_failed = "michael-staerke.de"; // reutn " - " was unsuccessfull
 
         
         /* html data, variables declaration and init. */
