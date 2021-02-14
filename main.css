@@ -1,8 +1,7 @@
 /*
 latest author:  mike.stk
-latest date:    07.09.2020
+latest date:    14.02.2021
 */
-
 
 @import url("https://fonts.googleapis.com/cssfamily=Lato|Poppins|Kaushan+Script");
 .has-vertically-aligned-content {
@@ -16,7 +15,7 @@ latest date:    07.09.2020
 }
 
 html {
-  font-family: 'Poppins', Lato, Tahoma, sans-serif;
+  font-family: "Poppins", Lato, Tahoma, sans-serif;
   width: 100%;
   min-height: 100%;
 }
@@ -27,18 +26,17 @@ html {
 
 .hero {
   background-image: url(https://picsum.photos/id/381/1920/1080);
-  background: linear-gradient(rgba(31, 44, 108, 0.65), 
-                rgba(31, 44, 108, 0.65)), rgba(0, 0, 0, 0.55) url("https://picsum.photos/id/381/1920/1080") no-repeat;
+  background: linear-gradient(rgba(31, 44, 108, 0.65), rgba(31, 44, 108, 0.65)),
+    rgba(0, 0, 0, 0.55) url("https://picsum.photos/id/381/1920/1080") no-repeat;
   background-attachment: fixed;
   background-size: cover;
   color: white;
-  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px 
-                rgba(0, 0, 0, 0.23);
-  font-family: 'Poppins', sans-serif;
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  font-family: "Poppins", sans-serif;
 }
 
 .hero .title {
-  font-family: 'Kaushan Script', sans-serif;
+  font-family: "Kaushan Script", sans-serif;
   transform: rotate(-5deg);
   font-size: 5rem;
   color: whitesmoke;
@@ -96,16 +94,15 @@ html {
 
 .hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li a:hover {
   color: #1f2c6c;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   border-bottom: 2px solid #1f2c6c;
 }
 
 .main-content {
   padding-top: 2rem;
   color: #3c4172;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   padding-top: 10%;
-
 }
 
 .main-content .section-dark {
@@ -117,7 +114,6 @@ html {
   height: 400px;
   padding-top: 10%;
   padding-bottom: 20%;
-    
 }
 
 @media (max-width: 599px) {
@@ -158,8 +154,8 @@ html {
 
 .main-content .section-dark.my-work .work-item {
   margin-bottom: 1rem;
-  -webkit-transition: all .1s ease-in-out;
-  transition: all .1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   border-radius: 5px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -232,7 +228,7 @@ html {
   height: 50px;
   font-size: 1.1rem;
   text-transform: uppercase;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 @media (max-width: 599px) {
@@ -356,7 +352,63 @@ body.preloader-site {
 }
 
 .white {
-    color:ghostwhite
+  color: ghostwhite;
 }
 
+/* Pop Up window */
 
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* End Pop Up Window */

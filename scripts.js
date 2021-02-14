@@ -1,11 +1,24 @@
 /*
-@date:       13.06.2020
+@date:       14.02.2021
 @author:     Mike Stk
 
 JS Script to test if the guest data is valid.
 */
 
 
+
+/* Script: Pop Up Window */
+
+// When the user clicks on <div>, open the popup
+function myFunction() {
+
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+
+
+
+/* Script: Validation */
 
 function validateForm() {
     
@@ -28,7 +41,7 @@ function validateForm() {
 
     /* Function description */
     function isEmail(email) {
-        let regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:               [a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9]                 {0,61}[a-ZA-Z0-9])?)*$/;
+        let regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9]{0,61}[a-ZA-Z0-9])?)*$/;
         return regex.test(String(email).toLowerCase());
     }
 

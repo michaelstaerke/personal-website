@@ -1,0 +1,4 @@
+{
+    "powershell.codeFormatting.addWhitespaceAroundPipe": true,
+    "editor.wordWrap": "on"
+}
