@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="DE">
+
+<!---
+@author:     Mike Stk
+@date:       13.01.2022
+
+---->
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Verhindert die indexierung (Suchmaschinen Aufnahme) der Webcrawler 
+             der meisten Suchmaschinen, weil es sich bei dieser Website um eine 
+             private Website handelt. Nur direkte, persönliche Kontakte sollen 
+             hierher geleitet werden. -->
+        <meta name="robots" content="noindex" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="bootstrap5/css/bootstrap.min.css"/>
+
+        <!-- Main CSS -->
+        <link rel="stylesheet" type="text/css" href="main.css"/>
+
+        <!-- Quelle: https://www.cdnfonts.com/games.font -->
+        <link href="https://://fonts.cdnfonts.com/css/games" rel="stylesheet" />
+
+        <!-- Sollte "/favicon.ico:1 Failed to load resource: 
+             the server responded with a status of 404 ()" entfernen -->
+        <link rel="shortcut icon" href="">
+
+        <!-- Bootstrap JavaScript -->
+        <script type="text/javascript" src="bootstrap5/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="rockPaperScissors.js"></script>
+        
+        <script type="text/javascript" src="contact-form-validation.js"></script>
+
+        <title>Website - Michael Stärke</title>
+
+    </head>
+    <!-- onload="jsFunction();" -->
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar justify-content-center navbar-dark bg-dark">
+            <!-- Navbar content -->
+            <a
+                class="navbar-brand"
+                href="https://michael-staerke.de/"
+                style="margin-right: 10%">
+                <img 
+                    src="img/logo_ms.jpg"
+                    id="navbar-logo"
+                    class="d-inline-block align-text-top">
+                </a
+            >
+            <ul class="nav nav-pills">
+                <li class="nav-item dropdown">
+                    <a
+                        class="nav-link dropdown-toggle"
+                        role="button"
+                        aria-expanded="false"
+                        data-bs-toggle="dropdown"
+                        href="#container-accordion"
+                        
+                        >Meine Projekte</a
+                    >
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="#container-accordion"
+                                >#1 Diese Personal Website</a
+                            >
+                        </li>
+                        <li>
+                            <a class="dropdown-item" 
+                            href="https://oncono.com/" 
+                            target="_blank"
+                                >#2 oncono - Designerregal GmbH</a
+                            >
+                        </li>
+                        <li>
+                            <a class="dropdown-item" 
+                            href="https://www.google.de/search?q=i-vendo+online+marketing+agentur&source=hp&ei=5SGVYpTMGsSalwTBtr7oBw&iflsig=AJiK0e8AAAAAYpUv9adtTwpGAYf39MNr_K5PhkDXy_wd&ved=0ahUKEwjU0tyjgYj4AhVEzYUKHUGbD30Q4dUDCAg&uact=5&oq=i-vendo+online+marketing+agentur&gs_lcp=Cgdnd3Mtd2l6EAMyBwghEAoQoAEyBwghEAoQoAEyBwghEAoQoAEyBwghEAoQoAE6CwgAEIAEELEDEIMBOhEILhCABBCxAxCDARDHARCjAjoRCC4QgAQQsQMQgwEQxwEQ0QM6CwguEIAEEMcBEK8BOgUIABCABDoLCC4QgAQQxwEQ0QM6BAgAEA06CgguEMcBEK8BEA06BggAEB4QDToECC4QDToECAAQEzoICAAQHhANEBM6BQghEKABOggIIRAeEBYQHToGCAAQHhAWOgoIIRAeEA8QFhAdUNsCWKMgYN8gaAFwAHgAgAHOAYgBrh6SAQY5LjIzLjGYAQCgAQGwAQA&sclient=gws-wiz" 
+                            target="_blank"
+                                >#3 i-Vendo - Online Marketing Agentur</a
+                            >
+                        </li>
+                        <li>
+                            <a class="dropdown-item" 
+                            href="https://kampfsportclubsingen.com" 
+                            target="_blank"
+                                >#4 Taekwando Verein Singen</a
+                            >
+                        </li>                        
+                        <li>
+                            <a class="dropdown-item" href="#container-accordion"
+                                >#5 Schere, Stein, Papier</a
+                            >
+                        </li>                        
+                        <li>
+                            <a class="dropdown-item" 
+                            href="http://website-tracker.michael-staerke.de/" 
+                            target="_blank"
+                                >#6 Website Besucher Tracker</a
+                            >
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#container-accordion"
+                                >#7 Persönliche Fotodatenbank</a
+                            >
+                        </li>
+                        <br>
+                        <li>
+                            <a id="navbar-project-description" href="#container-accordion">
+                                // Projektbeschreibungen unten //</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a
+                        class="nav-link dropdown-toggle"
+                        role="button"
+                        aria-expanded="false"
+                        data-bs-toggle="dropdown"
+                        href="#"
+                        
+                        >Weiterbildungen</a
+                    >
+                    <ul class="dropdown-menu">
+                        <br>
+                        <li>
+                            <p>abgeschlossen:</p>
+                        </li>
+                        <li>
+                            <a class="dropdown-item"
+                            href="https://www.udemy.com/course/der-komplette-webentwickler-2/"
+                            target="_blank"
+                                >#1 Udemy - Der komplette Webentwickler 2.0
+                                </a
+                                >
+                        </li>
+                        <br>
+                        <br>
+                        <li>
+                            <p>demnächst / zukünftig:</p>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" 
+                            href="https://www.udemy.com/course/javascript-bootcamp/"
+                            target="_blank"
+                                >#2 Udemy - Modernes JavaScript (ES6)</a
+                            >
+                        </li>
+                        <li>
+                            <a class="dropdown-item" 
+                            href="https://www.udemy.com/course/fortgeschrittene-python-programmierung/"
+                            target="_blank"
+                                >#3 Udemy - Fortgeschrittene Python Programmierung</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        role="button"
+                        href="http://datenschutz.michael-staerke.de"
+                        target="_blank"
+                    >Datenschutz</a>
+                </li>
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        role="button"
+                        href="http://impressum.michael-staerke.de/"
+                        target="_blank"
+                    >Impressum</a>
+                </li>
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        role="button"
+                        href="#container-md"
+                    >Kontakt</a>
+                </li>
+        </nav>
+
+        <!-- Hero Welcome Bereich -->
+        <div class="container-md"></div>
+
+        <!--Über Mich Bereich -->
+        <div class="container-md" id="about-me-section">
+            <h3 id="h3">Über mich</h3>
+            <div class="row">
+                <div class="col">
+                    <img src="img/foto_michael_staerke.jpg" 
+                    class="rounded float-start" 
+                    class="img-thumbnail"
+                    class="img-self-portrait"
+                    id="img-self-portrait" 
+                    alt="...">
+                    Hallo, ich heiße Michael Stärke und mein Spitzname ist Mike.
+                    Ich bin 26 Jahre alt und wohne derzeitig im schönen <b>Konstanz am Bodensee.</b>
+                    Ursprünglich komme ich aus dem Landkreis Lörrach, welches benachbart ist zu
+                    Frankreich und zur Schweiz, also das Dreiländereck Südwest. 
+                    <br/>
+                    <br/>
+                    <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#collapse-text-1">Mehr lesen ..</button>
+                        <div id="collapse-text-1" class="collapse">
+                        Meine <b>IT Reise</b> begann mit einem spannenden Studium der Angewandten Informatik 
+                        an der HTWG Konstanz, ohne Abschluss führte ich meinen Werdegang fort und
+                        suchte mir eigenständig Projekte als Entwickler oder erforschte 
+                        verschiedene Technologien im Selbststudium. In dieser Zeit sammelten sich auch 
+                        diverse Hardware Geräte an wie Kabel, Switches oder Raspberry Pis.
+                        <br/>
+                        <br/>
+                        Aktuell strebe ich den <b>IHK Fachinformatiker für Anwendungsentwicklung</b> an 
+                        um dennoch beruflich meiner tiefen Faszination (Informatik) nachgehen zu können.
+                        Für mich ist die Informatik nicht nur ein Beruf sondern eine Lebenseinstellung,
+                        denn privat interessiere ich mich sehr breit für Themen der IT / Informatik. 
+                        </div>
+                </div>
+                <div class="col">
+                    <b>Privat</b> bin ich in erster Linie sehr viel am Surfen im Web, täglich erkunde ich 
+                    die neusten IT-News oder allgemeine IT-Artikel auf Youtube oder in Online Magazinen wie 
+                    Entwickler.de, Heise, Golem, Netzpolitik, T3N oder in englischsprachigen Magazinen. 
+                    Besonders prägten mich Bücher (speziell IT die vom Thriller-Autor 
+                    <a href="https://www.amazon.de/Daniel-Suarez/e/B001V206AK/ref=dp_byline_cont_book_1"
+                    target="_blank">Daniel Suarez</a>), Filme über KI wie z.B. <i>I, Robot</i> 
+                    oder Serien aus dem Science Fiction Bereich, hin und wieder kamen auch mal Bücher über Persönlichkeitsentwicklung, 
+                    verschiedene Romane oder andere allgemeinbildende Bücher dran. 
+                    Selbstverständlich habe ich auch diverse IT / Informatik Bücher oder Magazine im Besitz, 
+                    nicht alles ist digital und zeitweise mal auf gedrucktes Papier gucken, tut auch den Augen gut.
+                    <br/>
+                    <br/>
+                    <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#collapse-text-2">Mehr lesen ..</button>
+                        <div id="collapse-text-2" class="collapse">
+                        Weil ich schon seit Kindestagen viel am PC saß, verschiedenste Spiele spielte oder viel Zeit auf 
+                        Youtube verbrachte, tat mir damals mein erstes richtiges <b>Hobby nämlich Basketball</b>, 
+                        in vielerlei Hinsicht richtig gut. Hier in Konstanz lernte ich nicht nur durch Basketball neue Leute kennen sondern 
+                        schaffte es auch für eine Saison in den Herren 2 Kader des TV Konstanz, jedoch brach ich aus 
+                        Verletzungsgründen den Hallenvereinssport ab. Während andere die Fußball Bundesliga verfolgen, 
+                        schaue ich regelmäßig in die amerikanische Basketball Liga (NBA) rein, 
+                        kein anderer Sport hat mich so dermaßen über fast ein Jahrzehnt in den Bann gezogen.
+                        <br/>
+                        <br/>
+                        Ansonsten treibe ich regelmäßig <b>Fitness</b> (was mir geistig und körperlich sehr gut tut), 
+                        gehe bei schönem Wetter spazieren oder fahre auch mal kleinere Radtouren und gehe Schwimmen - besonders in der Sommerzeit. 
+                        Konstanz ist meine neue Heimat und ich freue mich immer wieder besonders mit meinen <b>Freunden</b>
+                        die Altstadt oder Teile des Bodensees zu erkunden bzw. zu genießen. Kulturell habe ich auch noch einiges vor 
+                        wie Theaterbesuche, Konzerte der südwestdeutschen Philharmonie (ich beherrsche die Geige auf dem Skill-lvl. 1 :D)
+                        oder weitere Blicke über den Tellerrand bei Museenbesuchen. Ansonsten gehören <b>Reisen</b> durch Europa
+                        zu meinen weiteren großen Träumen, worauf ich fleißig hinarbeite.
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Projekte Zusammenfassung -->
+        <div class="container-fluid bg-dark">
+            <div class="container-md" id="container-accordion">
+                <h3 id="h3">Projekte Zusammenfassung</h3>
+                <div class="accordion" id="accordionExample1">
+                    <!-- accordion items -->
+
+                    <!-- portfolio item - project: personal page -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne"
+                            >
+                                Projekt #1 - Diese persönliche Website
+                            </button>
+                        </h2>
+                        <div
+                            id="collapseOne"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample"
+                        >
+                            <div class="accordion-body">
+                                <strong
+                                    >Personal website build from scratch</strong
+                                >
+                                <br />
+                                <br />
+                                Okay okay, Experten werden <b>Bootstrap 5</b> sehen und direkt denken, ne ne
+                                das ist nicht "from scratch", ja diesem Blickwinkel gebe ich auch Recht. 
+                                Ich wollte hiermit den Industriestandard für CSS Frameworks und zwar Bootstrap 
+                                üben und auch in 2, 3 oder 5 Jahren nicht gezwungen sein, alles von neu zu Programmieren.
+                                <br/>
+                                <br/>
+                                Diese Website entstand nach meinem <b>Udemy Online Kurs</b>
+                                <a href="https://www.udemy.com/course/der-komplette-webentwickler-2/"
+                                target="_blank">"Der komplette Webentwickler 2.0"</a> dort bekam ich erstens 
+                                wichtiges Wissen über die Webentwicklung und zweitens verschiedene Werkzeuge 
+                                zur Erstellung von Websiten und dazugehörigen Anwendungen wie 
+                                Datenbanken, an die Hand.
+                                <br />
+                                <br />
+                                Folgende <b>Webtechnologien</b> verwende ich:
+                                <br/> 
+                                HTML, CSS, das CSS-Framework Bootstrap 5,
+                                JavaScript, PHP, MySQL, das FTP-Programm FileZilla, die Entwicklungsumgebung
+                                Visual Studio Code, das Versionskontrollsystem Git und Github
+                                <br/>
+                                <br/>
+                                Als <b>Infrastruktur</b> wählte ich den Webhoster
+                                <a href="https://all-inkl.com/" target="_blank">all-inkl.com</a> 
+                                aus, bei dem ein LAMP-Webserver mit dazugehörigem
+                                Webspace konfiguriert ist. Die MySQL-Datenbanken werden über 
+                                <a href="https://www.phpmyadmin.net/" target="_blank">phpMyAdmin</a> verwaltet.
+                                <br/>
+                                <br/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- portfolio item - work exp.: oncono -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive"
+                                aria-expanded="false"
+                                aria-controls="collapseFive"
+                            >
+                                Projekt #2 - IT-Praktikum im E-Commerce für die Designerregal GmbH - oncono
+                            </button>
+                        </h2>
+                        <div
+                            id="collapseFive"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingFive"
+                            data-bs-parent="#accordionExample"
+                        >
+                            <div class="accordion-body">
+                                <strong
+                                    >Vollzeit IT-Praktikant E-Commerce</strong
+                                >
+                                <br />
+                                <br />
+                                <b>Online Shop Entwicklung:</b>
+                                <br/>
+                                Software-Implementierung zweier Shopsysteme und zwar ein B2C-Shop mit der SaaS-Lösung Wix-E-Commerce<br/> 
+                                und einmal ein B2B-Shop mit Open-Source-Lösung Wordpress WooCommerce, zum Verkauf von Designerregalen.
+                                <br/>
+                                <br/>
+                                <b>Webentwicklung:</b>
+                                <br/>
+                                Betreuung und Optimierung der Firmenhomepage, dazu die Projekt-Aussicht der komplexen und <br/>
+                                spannenden Programmierung einer 3D-Produktkonfigurator Applikation z.B. mit Three.js.
+                                <br/>
+                                <br/>
+                                <b>Digital Marketing:</b>
+                                </br>
+                                Suchmaschinenoptimierung
+                                <br/>
+                                <br/>
+                                <b>IT-Projektmanagement:</b>
+                                <br/>
+                                Dokumentation mithilfe eines Projektplans, Google Drive und Trello
+                                <br />
+                                <br />
+                                <p>
+                                    <a
+                                        href="https://oncono.com/"
+                                        target="_blank"
+                                        >oncono.com</a
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- portfolio item - work exp.: i-vendo -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix"
+                                aria-expanded="false"
+                                aria-controls="collapseSix"
+                            >
+                                Projekt #3 - Aushilfe in der Webentwicklung für Online Marketing Agentur - i-Vendo</i>
+                            </button>
+                        </h2>
+                        <div
+                            id="collapseSix"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingSix"
+                            data-bs-parent="#accordionExample"
+                        >
+                            <div class="accordion-body">
+                                <strong>Aushilfe - Frontend Webentwicklung für ein Online Marketing und Design Startup</strong>
+                                <br />
+                                <br />
+                                Individuelle Tätigkeiten die von Frontend-Aufgaben z.B. Coden mit HTML, CSS und 
+                                Arbeiten im Wordpress PageBuilder reichten, über zu Webmaster-Aufgaben wie 
+                                Konfigurationen von Wordpress Plugins, Backups und dazu PHP-Fehlersuchen innerhalb 
+                                des Wordpress-Backends bzw. der Web-Hosting-Schnittstelle. 
+                                Kleinere Dokumentationen wurden ebenfalls erstellt. Die Tätigkeiten waren größtenteils 
+                                auf der Startup Homepage (Stand heute gelöscht).
+                                <br />
+                                <br/>
+                                <p>
+                                    <a
+                                        href="https://www.google.de/search?q=i-vendo+online+marketing+agentur&source=hp&ei=5SGVYpTMGsSalwTBtr7oBw&iflsig=AJiK0e8AAAAAYpUv9adtTwpGAYf39MNr_K5PhkDXy_wd&ved=0ahUKEwjU0tyjgYj4AhVEzYUKHUGbD30Q4dUDCAg&uact=5&oq=i-vendo+online+marketing+agentur&gs_lcp=Cgdnd3Mtd2l6EAMyBwghEAoQoAEyBwghEAoQoAEyBwghEAoQoAEyBwghEAoQoAE6CwgAEIAEELEDEIMBOhEILhCABBCxAxCDARDHARCjAjoRCC4QgAQQsQMQgwEQxwEQ0QM6CwguEIAEEMcBEK8BOgUIABCABDoLCC4QgAQQxwEQ0QM6BAgAEA06CgguEMcBEK8BEA06BggAEB4QDToECC4QDToECAAQEzoICAAQHhANEBM6BQghEKABOggIIRAeEBYQHToGCAAQHhAWOgoIIRAeEA8QFhAdUNsCWKMgYN8gaAFwAHgAgAHOAYgBrh6SAQY5LjIzLjGYAQCgAQGwAQA&sclient=gws-wiz"
+                                        target="_blank"
+                                        >i-Vendo</a
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- portfolio item - project: webdesign ksc-singen -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour"
+                                aria-expanded="false"
+                                aria-controls="collapseFour"
+                            >
+                                Projekt #4 - Webdesign für einen Taekwondo Verein in Singen (Raum Konstanz)
+                            </button>
+                        </h2>
+                        <div
+                            id="collapseFour"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample"
+                        >
+                            <div class="accordion-body">
+                                <strong>Webdesign mit Wordpress und Frontend Webtechnologien</strong>
+                                <br />
+                                <br />
+                                Ein ehem. Studienkollege aus Singen hat mir dieses
+                                Projekt ermöglicht und dabei geht es darum, dass
+                                die Wordpress Website ein paar Anpassungen
+                                innerhalb des Webdesigns mithilfe von Baukasten
+                                + HTML und CSS, benötigt.
+                                <br />
+                                <br />
+                                <p>
+                                    <a
+                                        href="https://kampfsportclubsingen.com"
+                                        target="_blank"
+                                        >Taekwando Website</a
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                    </div>                    
+
+                    <!-- portfolio item - project: scissor, stone, paper -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree"
+                                aria-expanded="false"
+                                aria-controls="collapseThree"
+                            >
+                                Projekt #5 - Minigame - Schere, Stein, Papier in
+                                JavaScript, Python
+                            </button>
+                        </h2>
+                        <div
+                            id="collapseThree"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample"
+                        >
+                            <div class="accordion-body">
+                                <strong
+                                    >coming soon ~ Schere, Stein Papier -Spiel einmal in JavaScript und einmal in Python </strong
+                                >
+                                <br />
+                                <br />
+                                Kleine Minigames zu programmieren hat mich schon im damaligen Informatikunterricht fasziniert,
+                                im Fachabitur war es Pingpong mit Java. Rein aus Spaß und Neugierde möchte ich weitere eigene 
+                                Spiele programmieren und mein erstes richtiges Projekt ist eben Schere, Stein, Papier. 
+                                Ich werde hier auch die Performance der zwei Programmiersprachen vergleichen und 
+                                über die Zeit verschiedene Features hinzufügen wie ein zweites Level (Schere, Stein, Papier,
+                                Echse, Spock). Später dann mit Speicherung von Spielständen auf einem Server.
+                                <br/>
+                                <br/>
+                                Wer schon einmal Computerspiele gespielt hat und sich fragte, warum ist 
+                                der Modus <i>Computer-Schwer</i> so hart zu gewinnen, weiß welche enorme Macht und Komplexität 
+                                hinter so einer Spiel-KI bzw. NPC sein kann. Daher möchte ich für die Zukunft auch das komplexe teils 
+                                mathematische Thema KI durch solche einfachen Minigames studieren. Passend dazu erwarb ich mir
+                                ja den Udemy Kurs <i>fortgeschrittene Python Programmierung</i>, als Vorkurs zu Machine Learning (Data Science).
+                                <br />
+                                <br/>
+                                <!-- Spiel öffnen -->
+                                <!-- ToDo: Webdesign, Responsivness bzw. Positionierung -->
+                                <p>
+                                    <label
+                                        >Schere, Stein, Papier Spiel
+                                        Starten [in JS]</label
+                                    >
+                                </p>
+                                <p>
+                                    <button
+                                        id="rockpsButton"
+                                        class="rockpsButton"
+                                    ></button>
+                                </p>
+
+                                <!-- Spiel Fenster -->
+
+                                <!-- The Modal -->
+                                <div id="myModal" class="modal">
+                                    <!-- Modal -->
+                                    <div
+                                        class="modal-content"
+                                        class="games-font"
+                                    >
+                                        <div class="modal-header">
+                                            <span class="close">&times;</span>
+                                            <h2>Schere Stein Papier</h2>
+                                        </div>
+
+                                        <div class="modal-body" id="modal-body">
+                                            <p>Waehle den Spiel Modus</p>
+                                            <p>
+                                                <button
+                                                    id="gameModeButtonOne"
+                                                    class="gameModeButton"
+                                                    class="games-font"
+                                                >
+                                                    Modus 1: Schere Stein Papier
+                                                </button>
+                                            </p>
+                                            <p>
+                                                <button
+                                                    id="gameModeButtonTwo"
+                                                    class="gameModeButton"
+                                                    class="games-font"
+                                                >
+                                                    Modus 2: Schere, Stein,
+                                                    Papier, Echse, Spock
+                                                </button>
+                                            </p>
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <h3></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Spiel Fenster Ende -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- portfolio item - project: monitoring system -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo"
+                                aria-expanded="true"
+                                aria-controls="collapseTwo"
+                            >
+                                Projekt #6 - Website Besucher Tracker
+                            </button>
+                        </h2>
+                        <div
+                            id="collapseTwo"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample"
+                        >
+                            <div class="accordion-body">
+                                <strong
+                                    >coming soon ~ Website Besucher Tracking bzw.
+                                    Monitoring System</strong
+                                >
+                                <br />
+                                <br />
+                                Als ich die anderen Wordpress Websiten
+                                administrierte, fiel mir auf, dass über die
+                                angezeigten Statistiken der IT-Security-Plugins
+                                viel "Hintergrund" Aktivität zu sehen ist.
+                                Verschiedene Website Besucher aus verschiedenen
+                                Ländern, manche probierten
+                                Schwachstellen-Angriffe auf den Websiten aus.
+                                Nicht jede IP Adresse muss zwangsweise ein
+                                "Hacker" sein, es könnten auch Bots bzw. Skripts
+                                von solchen Hackern sein, die alles und jeden im
+                                Netz nach Schwachstellen angreifen.
+                                <br />
+                                <br />
+                                Diese Software soll das gleiche Thema behandeln,
+                                quasi ein kleines
+                                <strong>Monitoring System</strong>
+                                der Besucher dieser Website. Website-Besucher
+                                Daten werden über PHP in einer MySQL Datenbank
+                                auf meinem LAMP-Webserver gespeichert und dann
+                                werden aus diesen Daten interessante Statistiken
+                                generiert. Wie z.B. wie viele Besucher / Bots
+                                hat meine Website täglich oder aus welchen
+                                Ländern kommen diese Besucher (IP-Zuordnungen)?
+                                Wie lange verweilen die Besucher und wo
+                                probieren Hacker-Skripts Schwachstellen auf
+                                meiner Website aus?
+                                <br />
+                                <br />
+                                <p>
+                                    <a
+                                        href="http://website-tracker.michael-staerke.de/"
+                                        target="_blank"
+                                        >Website Tracker</a
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- portfolio item - project: personal photo cloud -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSeven">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseSeven"
+                                aria-expanded="false"
+                                aria-controls="collapseSeven"
+                            >
+                                Projekt #7 - Photography Cloud - Präsentation eigener Bilder im Web
+                            </button>
+                        </h2>
+                        <div
+                            id="collapseSeven"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingSeven"
+                            data-bs-parent="#accordionExample"
+                        >
+                            <div class="accordion-body">
+                                <strong target="_blank" href="#"
+                                    >coming soon ~ Fotografien Datenbank</strong
+                                >
+                                <br/>
+                                <br/>
+                                Hier sollen meine über die Jahre gesammelten Fotografien 
+                                (Schnappschüsse) z.B. von Konstanz und meinem Leben zuvor, veröffentlicht werden. 
+                                Dabei soll der User (also ich) nicht einfach umständlich alles manuell und kompliziert
+                                hochladen müssen, sondern das Augenmerk liegt hierbei auf effizientes 
+                                Hochladen und Darstellen von Bildern (UX/UI).
+                                <br />
+                                <br/>
+                                <a href="">Zur Foto Datenbank</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- END portfolio / accordion items -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Kontakt Formular -->
+        <div class="container-md" id="container-md">
+            <p>
+                <u><h1 id="h1-contact">Kontaktiere mich</h1></u>
+            </p>
+            <form   
+                    method="POST" 
+                    id="contact-form"
+                    action="contactform.php"
+            >
+                <!-- HTML5 attributes like type, max-length, required help out
+                     with putting the HTML data in the correct form, before its 
+                     given to JavaScript -->
+                <div class="form-floating">
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="floatingName"
+                        name="floatingName"
+                        placeholder="Vorname, Nachname"
+                        required
+                    />
+                    <label for="floatingName">Vorname, Nachname</label>
+                </div>
+                <div class="form-floating">
+                    <input
+                        type="email"
+                        class="form-control"
+                        id="floatingEmail"
+                        name="floatingEmail"
+                        placeholder="name@example.com"
+                        required
+                    />
+                    <label for="floatingEmail">Email Adresse</label>
+                </div>
+                <div class="form-floating">
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="floatingSubject"
+                        name="floatingSubject"
+                        placeholder="Betreff"
+                        max-length="30"
+                        required
+                    />
+                    <label for="floatingSubject">Betreff</label>
+                </div>
+                <div class="form-floating">
+                    <textarea
+                        class="form-control"
+                        placeholder="Lasse eine Nachricht hier!"
+                        id="floatingTextArea"
+                        name="floatingTextArea"
+                        required
+                    ></textarea>
+                    <label for="floatingTextarea">Nachricht</label>
+                </div>
+                <div class="form-check">
+                    <input
+                        name="datenschutz"
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckChecked"
+                        checked
+                        required
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                        <a href="https://datenschutz.michael-staerke.de/" 
+                            id="datenschutz"
+                            target="_blank"
+                            >Ich bestätige die Datenschutzerklärung</a
+                        >
+                    </label>
+                </div>
+                
+                <fieldset class="form-group">
+                    <button type="submit"
+                            id="submit" 
+                            class="btn btn-primary"
+                            onclick="return contactFormValidation();">
+                        Absenden
+                    </button>
+                </fieldset>
+
+                <!-- JavaScript Success or Error Text -->
+                <p id="submit-text"></p>
+
+                <!--
+
+                <div id="error">
+                    <?php echo $kontaktFehler; echo $kontaktErfolg;  ?>
+                </div>
+                
+                -->
+
+            </form>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-center text-white" id="footer">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Github -->
+                    <a
+                        class="btn-outline-light btn-floating m-1"
+                        href="https://github.com/michaelstaerke"
+                        target="_blank"
+                        role="button"
+                        ><i class="fab fa-github"></i
+                    ></a>
+                    <!-- Xing -->
+                    <a
+                        class="btn btn-primary btn-floating m-1"
+                        href="https://www.xing.com/profile/Mike_Staerke"
+                        target="_blank"
+                        role="button"
+                        ><i class="fab fa-xing"></i
+                    ></a>
+                    <!-- Linkedin -->
+                    <a
+                        class="btn btn-primary btn-floating m-1"
+                        href="https://www.linkedin.com/in/michael-staerke/"
+                        target="_blank"
+                        role="button"
+                        ><i class="fab fa-linkedin"></i
+                    ></a>
+
+                    <!-- Facebook -->
+                    <a
+                        class="btn btn-primary btn-floating m-1"
+                        href="https://www.facebook.com/staerke.mike/"
+                        target="_blank"
+                        role="button"
+                        ><i class="fab fa-facebook-f"></i
+                    ></a>
+                </section>
+                <!-- Section: Social media -->
+            </div>
+            <!-- Copyright -->
+            <div class="text-center p-3" id="copyright-style">
+                © 2022 Copyright:
+                <a class="text-white">Michael Stärke</a>
+            </div>
+        </footer>
+        <?php   include 'contactform.php'; 
+                include 'functions.php'; 
+        ?>
+    </body>
+</html>
