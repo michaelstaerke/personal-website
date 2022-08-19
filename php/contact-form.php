@@ -5,8 +5,8 @@
 
 */
 
-/* ToDo: Serverside validation because hackers can surpase clientside validation (JS). */
 error_reporting(E_ALL);
+ini_set('display_errors','On');
 
 if($_POST) {
 

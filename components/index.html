@@ -3,9 +3,13 @@
 
 <!---
 @author:     Mike Stk
-@date:       12.07.2022
+@date:       19.08.2022
+
+Bootstrap library:  https://getbootstrap.com/docs/5.0/getting-started/introduction/ 
+
 ---->
 
+    <!-- Section: Head -->
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -15,7 +19,8 @@
         <meta name="robots" content="noindex" />
 
         <!-- CSS, styles files -->
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" /> <!-- version 5.0.2 -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css.map" /> <!-- version 5.0.2 -->
         <link rel="stylesheet" type="text/css" href="css/main.css" />
 
         <link href="https://://fonts.cdnfonts.com/css/games" rel="stylesheet" />  
@@ -32,11 +37,6 @@
         <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
 
-        <!-- JavaScript files -->
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/rockPaperScissors.js"></script>
-        <script type="text/javascript" src="js/contact-form-validation.js"></script>
-
         <!-- HTML website title -->
         <title>Website - Michael Stärke</title>
 
@@ -45,9 +45,9 @@
     <!-- TODO: onload="jsFunction();" -->
 
     <body>
-        <!-- Navigation Bar -->
+
+        <!-- Section: Navigation Bar -->
         <nav class="navbar justify-content-center navbar-dark bg-dark">
-            <!-- Navbar content -->
             <a
                 class="navbar-brand"
                 href="https://michael-staerke.de/"
@@ -59,6 +59,8 @@
                 </a
             >
             <ul class="nav nav-pills">
+
+                <!-- Navigation: "Projekte" -->
                 <li class="nav-item dropdown">
                     <a
                         class="nav-link dropdown-toggle"
@@ -120,6 +122,8 @@
                         </li>
                     </ul>
                 </li>
+
+                <!-- Navigation: "Weiterbildungen" -->
                 <li class="nav-item dropdown">
                     <a
                         class="nav-link dropdown-toggle"
@@ -164,22 +168,28 @@
                         </li>
                     </ul>
                 </li>
+
+                <!-- Navigation: "Datenschutz" -->
                 <li class="nav-item">
                     <a
                         class="nav-link"
                         role="button"
-                        href="http://datenschutz.michael-staerke.de"
+                        href="components/datenschutz.html"
                         target="_blank"
                     >Datenschutz</a>
                 </li>
+
+                <!-- Navigation: "Impressum" -->
                 <li class="nav-item">
                     <a
                         class="nav-link"
                         role="button"
-                        href="http://impressum.michael-staerke.de/"
+                        href="components/impressum.html"
                         target="_blank"
                     >Impressum</a>
                 </li>
+
+                <!-- Navigation: "Kontakt" -->
                 <li class="nav-item">
                     <a
                         class="nav-link"
@@ -189,12 +199,12 @@
                 </li>
         </nav>
 
-        <!-- Hero Welcome Bereich -->
+        <!-- Section: Hero Welcome -->
         <div class="container-md"></div>
 
-        <!--Über Mich Bereich -->
+        <!-- Section: "Über Mich" -->
         <div class="container-md" id="about-me-section">
-            <h3 id="h3">Über mich</h3>
+            <h3 id="h3"><strong>Persönliches zu mir</strong></h3>
 
             <div class="row">
                 <div class="col">
@@ -263,7 +273,7 @@
             </div>
         </div>
         
-        <!-- Projekte Zusammenfassung -->
+        <!-- Section: "Projekte Zusammenfassung" -->
         <div class="container-fluid bg-dark">
             <div class="container-md" id="container-accordion">
                 <h3 id="h3">Projekte Zusammenfassung</h3>
@@ -312,7 +322,7 @@
                                 Folgende <b>Webtechnologien</b> verwende ich:
                                 <br/> 
                                 HTML, CSS, das CSS-Framework Bootstrap 5,
-                                JavaScript, PHP, MySQL, das FTP-Programm FileZilla, die Entwicklungsumgebung
+                                Vanilla JavaScript (ES6), PHP 8, MySQL, das FTP-Programm FileZilla, die Entwicklungsumgebung
                                 Visual Studio Code, das Versionskontrollsystem Git und Github
                                 <br/>
                                 <br/>
@@ -684,7 +694,7 @@
             </div>
         </div>
 
-        <!-- Kontakt Formular -->
+        <!-- Section: "Kontakt Formular" -->
         <div class="container-md" id="container-md">
             <p>
                 <u><h1 id="h1-contact">Kontaktiere mich</h1></u>
@@ -760,30 +770,41 @@
                     </label>
                 </div>
                 
+                <!--
+                In the button attributes, there was another codeline, but i removed it:
+                onclick="return contactFormValidation();">
+                -->
                 <fieldset class="form-group">
                     <button type="submit"
                             id="submit" 
                             class="btn btn-primary"
-                            onclick="return contactFormValidation();">
                         Absenden
+                    >
                     </button>
                 </fieldset>
 
+                <!-- ToDo: 
+				For the development process i needed to stop the HTML page to reload, 
+				so i added event.prevent() to JS, later if i need to delete that, 
+				this code could help for future debugging:
+				<input type="button" value="Submit" onclick="myFunction()">
+				-->
+
+
                 <!-- JavaScript Success or Error Text -->
-                <p id="submit-text"></p>
+                <p id="submit-text"> </p>
+
 
                 <!--
-
                 <div id="error">
                     <?php echo $kontaktFehler; echo $kontaktErfolg;  ?>
                 </div>
-                
                 -->
 
             </form>
         </div>
 
-        <!-- Footer -->
+        <!-- Section: Footer -->
         <footer class="bg-dark text-center text-white" id="footer">
             <!-- Grid container -->
             <div class="container p-4 pb-0">
@@ -832,12 +853,24 @@
             </div>
         </footer>
 
-        <!-- PHP files -->
-        <?php   
-            include 'php/main-functions.php';
-            include 'php/contact-form.php'; 
-            include 'php/website-tracker.php'; 
-        ?>
+
+	<!-- JavaScript files 
+	By putting it at the end, the .js files have access to the DOM elements,
+	for example form elements.
+	-->		
+    <script type="text/javascript" src="js/bootstrap.min.js"></script> <!-- version 5.0.2 -->
+    <script type="text/javascript" src="js/bootstrap.min.js.map"></script> <!-- version 5.0.2 -->
+    <script type="text/javascript" src="js/rockPaperScissors.js"></script>
+    <script type="text/javascript" src="js/contact-form-validation.js"></script>
+
+
+    <!-- PHP files -->
+    <?php   
+        include 'php/main-functions.php';
+        include 'php/contact-form.php'; 
+        include 'php/website-tracker.php'; 
+    ?>
+
 
     </body>
 </html>
